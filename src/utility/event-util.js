@@ -7,19 +7,19 @@
  * @return {function} Dispose attached handlers callback.
  */
 export function registerClickOutside(doc, excludeRoot, outsideClickHandler) {
-    const trackOutsideClick = (event) => {
-        if (!excludeRoot.contains(event.target)) {
-            outsideClickHandler();
-        }
-    };
-
-    doc.addEventListener('click', trackOutsideClick);
-    doc.addEventListener('touchstart', trackOutsideClick);
-
-    return () => {
-        doc.removeEventListener('click', trackOutsideClick);
-        doc.removeEventListener('touchstart', trackOutsideClick);
+  const trackOutsideClick = (event) => {
+    if (!excludeRoot.contains(event.target)) {
+      outsideClickHandler();
     }
+  };
+
+  doc.addEventListener('click', trackOutsideClick);
+  doc.addEventListener('touchstart', trackOutsideClick);
+
+  return () => {
+    doc.removeEventListener('click', trackOutsideClick);
+    doc.removeEventListener('touchstart', trackOutsideClick);
+  };
 }
 
 /**
@@ -29,15 +29,15 @@ export function registerClickOutside(doc, excludeRoot, outsideClickHandler) {
  * @returns {function} Function reference wrapping original callback.
  */
 export function debounce(callback, delay) {
-    let ref = null;
+  let ref = null;
 
-    return (...args) => {
-        const differCallback = () => {
-            callback.apply(this, args);
-            ref = null;
-        }
-
-        clearTimeout(ref);
-        ref = setTimeout(differCallback, delay);
+  return (...args) => {
+    const differCallback = () => {
+      callback.apply(this, args);
+      ref = null;
     };
+
+    clearTimeout(ref);
+    ref = setTimeout(differCallback, delay);
+  };
 }

@@ -1,0 +1,30 @@
+{
+  "name": "zsc-dropdown",
+  "version": "1.0.0",
+  "description": "Framework agnostic multi select dropdown component",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretty": "prettier --write \"**/*.{js,css,html}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yohangz/zsc-dropdown.git"
+  },
+  "keywords": [
+    "Multi",
+    "Select",
+    "Dropdown",
+    "ZSC",
+    "Dropdown"
+  ],
+  "author": "Yohan Gomez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yohangz/zsc-dropdown/issues"
+  },
+  "homepage": "https://github.com/yohangz/zsc-dropdown#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
