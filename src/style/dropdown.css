@@ -15,7 +15,8 @@
   --zsc-select-padding: 0.0625em 0.25em;
   --zsc-select-background-color: #f6f6f6;
   --zsc-select-background-hover-color: #dedcdc;
-  --zsc-select-arrow-img: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23444%22%20%20d%3D%22M16.6%208.6L12%2013.2%207.4%208.6%206%2010l6%206%206-6z%22%2F%3E%3C%2Fsvg%3E') 0 0 / contain;
+  --zsc-select-arrow-img: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23444%22%20%20d%3D%22M16.6%208.6L12%2013.2%207.4%208.6%206%2010l6%206%206-6z%22%2F%3E%3C%2Fsvg%3E')
+    0 0 / contain;
 
   --zsc-select-options-list-padding: 0.5em;
   --zsc-select-options-list-search-padding: 0.25em;
