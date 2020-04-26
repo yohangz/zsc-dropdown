@@ -1,5 +1,11 @@
 # ZSC Multi Select Dropdown Component
-> Multi select dropdown compoennt capable of filtering dropdown options.
+> Framework agnostic multi select dropdown component.
 
 ## TODO: Future Enhansments
-- 
+- Comprehensive unit test suite.
+- Cross browser compatibility.
+- Selected option remove support in selection view.
+- Lazy loading dropdown options.
+- Comprehensive accessibility support.
+- Multi theme compatibility.
+  
