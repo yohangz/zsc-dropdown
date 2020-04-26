@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pretty": "prettier --write \"**/*.{js,css,html}\""
+    "pretty": "prettier --write \"**/*.{js,css,html}\"",
+    "lint": "eslint src/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/yohangz/zsc-dropdown#readme",
   "devDependencies": {
+    "eslint": "^6.8.0",
     "prettier": "^2.0.5"
   }
 }
