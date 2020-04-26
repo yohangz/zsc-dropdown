@@ -1,0 +1,180 @@
+/*
+ * Using BEM CSS class naming convension.
+ */
+
+ :root {
+     --zsc-border-radius: 0.0625em;
+     --zsc-border: 0.0625em solid rgba(0,0,0,.08);
+
+     --zsc-background-color: #fff;
+
+     --zsc-select-view-padding: .25em 2em .25em .25em;
+     --zsc-select-default-height: 1.125em;
+     --zsc-select-default-margin: 0.25em;
+     --zsc-select-magrin: 0.125em;
+     --zsc-select-padding: 0.0625em 0.25em;
+     --zsc-select-background-color: #f6f6f6;
+     --zsc-select-background-hover-color: #dedcdc;
+     --zsc-select-arrow-img: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23444%22%20%20d%3D%22M16.6%208.6L12%2013.2%207.4%208.6%206%2010l6%206%206-6z%22%2F%3E%3C%2Fsvg%3E") 0 0/contain;
+ 
+     --zsc-select-options-list-padding: .5em;
+     --zsc-select-options-list-search-padding: .25em;
+     --zsc-select-options-list-search-margin: 0 0 .5em;
+     --zsc-select-options-list-search-icon: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M15.5%2014h-.79l-.28-.27C15.41%2012.59%2016%2011.11%2016%209.5%2016%205.91%2013.09%203%209.5%203S3%205.91%203%209.5%205.91%2016%209.5%2016c1.61%200%203.09-.59%204.23-1.57l.27.28v.79l5%204.99L20.49%2019l-4.99-5zm-6%200C7.01%2014%205%2011.99%205%209.5S7.01%205%209.5%205%2014%207.01%2014%209.5%2011.99%2014%209.5%2014z%22%2F%3E%3C%2Fsvg%3E") 0 0/contain no-repeat;
+     --zsc-select-options-list-search-icon-background-color: #396996;
+     --zsc-select-options-list-search-icon-height: 1.75em;
+     --zsc-select-options-list-search-icon-width: 1.75em;
+     --zsc-select-options-list-container-height: calc(100% - 2.25em);
+     --zsc-select-options-list-option-padding: .125em .5em;
+     --zsc-select-options-list-option-hover-background-color: #f1f5fd;
+     --zsc-select-options-list-option-selected-background-color: #c3d6f8;
+     --zsc-select-options-list-option-selected-hover-background-color: #bad2fa;
+     --zsc-select-options-list-no-data-option-margin-top: -0.5625em;
+}
+
+/*------ DROPDOWN ------*/
+
+.zsc-dropdown {
+    position: relative;
+}
+
+/*------ DROPDOWN SELECT ------*/
+
+.zsc-dropdown__select {
+    position: relative;
+    border: var(--zsc-border);
+    border-radius: var(--zsc-border-radius);
+    padding: var(--zsc-select-view-padding);
+    cursor: pointer;
+    background-color: var(--zsc-background-color);
+}
+
+.zsc-dropdown__select-default {
+    height: var(--zsc-select-default-height);
+    margin: var(--zsc-select-default-margin);
+    display: block;
+    align-self: center;
+}
+
+.zsc-dropdown__select-default--hidden {
+    display: none;
+}
+
+.zsc-dropdown__select-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.zsc-dropdown__select-option {
+    padding: var(--zsc-select-padding);
+    margin: var(--zsc-select-magrin);
+    background-color: var(--zsc-select-background-color);
+    border: var(--zsc-border);
+    border-radius: var(--zsc-border-radius);
+}
+
+.zsc-dropdown__select-option:hover {
+    background-color: var(--zsc-select-background-hover-color);
+}
+
+.zsc-dropdown__select-arrow {
+    position: absolute;
+    right: .25em;
+    top: .25em;
+    background: var(--zsc-select-arrow-img);
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/*------ DROPDOWN OPTIONS LIST ------*/
+
+.zsc-dropdown__list {
+    position: absolute;
+    padding: var(--zsc-select-options-list-padding);
+    border: var(--zsc-border);
+    border-radius: var(--zsc-border-radius);
+    background-color: var(--zsc-background-color);
+}
+
+.zsc-dropdown__list--hidden {
+    display: none;
+}
+
+.zsc-dropdown__list-search-container {
+    display: flex;
+}
+
+.zsc-dropdown__list-search-txt {
+    flex: 1 1 auto;
+    width: 1%;
+    border: var(--zsc-border);
+    padding: var(--zsc-select-options-list-search-padding);
+    margin: var(--zsc-select-options-list-search-margin);
+    font-size: inherit;
+    font-family: inherit;
+    outline: none;
+}
+
+.zsc-dropdown__list-search-icon {
+    flex: none;
+    width: var(--zsc-select-options-list-search-icon-width);
+    height: var(--zsc-select-options-list-search-icon-height);
+    background: var(--zsc-select-options-list-search-icon);
+    background-color: var(--zsc-select-options-list-search-icon-background-color);
+}
+
+.zsc-dropdown__list-container {
+    display: block;
+    height: var(--zsc-select-options-list-container-height);
+    overflow-y: auto;
+    border: var(--zsc-border);
+}
+
+.zsc-dropdown__list-options {
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.zsc-dropdown__list-option {
+    padding: var(--zsc-select-options-list-option-padding);
+    background-color: var(--zsc-background-color);
+    border-bottom: var(--zsc-border);
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.zsc-dropdown__list-option:hover {
+    background-color: var(--zsc-select-options-list-option-hover-background-color);
+}
+
+.zsc-dropdown__list-option--selected {
+    background-color: var(--zsc-select-options-list-option-selected-background-color);
+}
+
+.zsc-dropdown__list-option--selected:hover {
+    background-color: var(--zsc-select-options-list-option-selected-hover-background-color);
+}
+
+.zsc-dropdown__list-option--hidden {
+    display: none;
+    background-color: var(--zsc-background-color);
+}
+
+.zsc-dropdown__no-data-option {
+    display: none;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    margin-top: var(--zsc-select-options-list-no-data-option-margin-top);
+}
+
+.zsc-dropdown__no-data-option--visible {
+    display: block;
+}

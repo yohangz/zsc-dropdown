@@ -1,0 +1,30 @@
+:root {
+    --dropdown-width: 20rem;
+    --background-color: #fff
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    font-size: 100%;
+    height: 100%;  
+}
+
+.dropdown-target {
+    width: var(--dropdown-width);
+}
