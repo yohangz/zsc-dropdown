@@ -155,3 +155,4 @@ For optimum performance:
 - Multi theme compatibility.
 - Proper packaging/bunding support and publish.
 - Dropdown options layout template support.
+- Refine public API.
