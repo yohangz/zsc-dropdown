@@ -34,11 +34,99 @@ dropdown.dispose();
 
 ### Config options
 
-|   |   |
-|---|---|
-|   |   |
-|   |   |
-|   |   |
+```js
+{
+  /**
+   * Current HTMLDocument reference.
+   * Expicitly passsed for testability.
+   * @type {HTMLDocument}
+   */
+  document: window.document,
+
+  /**
+   * Target element CSS selector.
+   * Dropdown component will render in this target element.
+   * @type {string}
+   */
+  targetElementSelector: 'body',
+
+  /**
+   * Default message to display when no options are selected.
+   * @type {string}
+   */
+  defaultSelectText: 'Select Options...',
+
+  /**
+   * Message displayed when options list is empty.
+   * @type {string}
+   */
+  noDataMessage: 'Data not available.',
+
+  /**
+   * Options list menu width.
+   * @type {string}
+   */
+  optionsMenuWidth: '200px',
+
+  /**
+   * Options list menu height.
+   * @type {string}
+   */
+  optionsMenuHeight: '200px',
+
+  /**
+   * Dropdown bound data key property identifier.
+   * Corresponding value is used to uniquely identify dropdown options.
+   * @type {string}
+   */
+  keyPorpertyIndetifier: 'key',
+
+  /**
+   * Dropdown bound data value property identifier.
+   * Corresponding value is used as the display text of dropdown options.
+   * @type {string}
+   */
+  valuePropertyIdentifier: 'value',
+
+  /**
+   * Starting point of data source.
+   * Mainly exposed for future usage of fetch data on scroll functionality.
+   * @type {number}
+   */
+  offset: 0,
+
+  /**
+   * Data limit to fetch form offset value.
+   * @type {number}
+   */
+  limit: Infinity,
+
+  /**
+   * Default selected options.
+   * Use key and value as indicated in keyPorpertyIndetifier and valuePropertyIdentifier properties.
+   * @type {Map}
+   */
+  selected: new Map(),
+
+  /**
+   * Open dropdown options menu on initial load.
+   * @type {boolean}
+   */
+  openOnLoad: false,
+
+  /**
+   * Filter event debounce delay in milliseconds.
+   * @type {number}
+   */
+  filterDebounceDelay: 400,
+
+  /**
+   * Filter query text.
+   * @type {string}
+   */
+  query: ''
+}
+```
 
 ### Run Demo
 
