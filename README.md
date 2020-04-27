@@ -148,9 +148,10 @@ For optimum performance:
 
 ## TODO: Future Enhansments
 - Comprehensive unit test suite.
-- Cross browser compatibility.
-- Selected option remove support in selection view.
-- Lazy loading dropdown options.
+- Cross-browser compatibility.
+- Selected options remove support in the selection view.
+- Lazy loading dropdown options on scroll.
 - Comprehensive accessibility support.
 - Multi theme compatibility.
-- Proper packaging/bunding support.
+- Proper packaging/bunding support and publish.
+- Dropdown options layout template support.
