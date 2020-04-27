@@ -92,6 +92,7 @@ export class DropdownList {
     // Create dropdown search textbox box.
     const dropdownListSearch = createElement(doc, DROPDOWN_LIST_SEARCH_TEXT, 'input');
     dropdownListSearch.type = 'text';
+    dropdownListSearch.value = this.config.query;
     dropdownListSearchContainer.appendChild(dropdownListSearch);
 
     // Create dropdown list options scrollable container.
