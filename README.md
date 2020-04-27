@@ -1,6 +1,8 @@
 # ZSC Multi Select Dropdown Component
 > Framework agnostic multi select dropdown component.
 
+<img src="https://raw.githubusercontent.com/yohangz/zsc-dropdown/master/usage.gif" alt="Usage Demo">
+
 ## Usage
 
 ### Integration
@@ -136,6 +138,13 @@ Host project root in any HTTP server and view `demo/index.html`
 
 This component only support evergreen browsers without compiling down to target ES version and applying polyfills.
 Bable + Rollup can be used to achieve this.
+
+For optimum performance:
+
+```html
+<script type="module" src="es-modules-version.js"></script>
+<script nomodule src="compiled-version-with-polyfills.js"></script>
+```
 
 ## TODO: Future Enhansments
 - Comprehensive unit test suite.
