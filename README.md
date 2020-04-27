@@ -151,7 +151,7 @@ For optimum performance:
 - Cross-browser compatibility.
 - Selected options remove support in the selection view.
 - Lazy loading dropdown options on scroll.
-- Comprehensive accessibility support.
+- Comprehensive accessibility support with keyboard navigation.
 - Multi theme compatibility.
 - Proper packaging/bunding support and publish.
 - Dropdown options layout template support.
