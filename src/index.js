@@ -7,10 +7,8 @@ import { debounce } from './utility/event-util.js';
 
 export { staticDataBindHandler, Dropdown, debounce };
 
-/**
- * Expose dropdown component to global scope.
- */
-globalThis.zsc = globalThis.zsc || {};
-globalThis.zsc.Dropdown = globalThis.zsc.Dropdown || Dropdown;
-globalThis.zsc.staticDataBindHandler = globalThis.zsc.staticDataBindHandler || staticDataBindHandler;
-globalThis.zsc.debounce = globalThis.zsc.debounce || debounce;
+// Exposing to global scope can be achieved via following snippet in case if bundler is not available.
+// globalThis.zsc = globalThis.zsc || {};
+// globalThis.zsc.Dropdown = globalThis.zsc.Dropdown || Dropdown;
+// globalThis.zsc.staticDataBindHandler = globalThis.zsc.staticDataBindHandler || staticDataBindHandler;
+// globalThis.zsc.debounce = globalThis.zsc.debounce || debounce;

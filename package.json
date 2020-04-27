@@ -2,22 +2,23 @@
   "name": "zsc-dropdown",
   "version": "1.0.0",
   "description": "Framework agnostic multi select dropdown component",
-  "main": "src/index.js",
+  "main": "zsc-dropdown.js",
+  "module": "zsc-dropdown.es.js",
+  "jsnext:main": "zsc-dropdown.es.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pretty": "prettier --write \"**/*.{js,css,html}\"",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yohangz/zsc-dropdown.git"
   },
   "keywords": [
-    "Multi",
-    "Select",
+    "Multi Select Dropdown",
     "Dropdown",
-    "ZSC",
-    "Dropdown"
+    "ZSC Dropdown"
   ],
   "author": "Yohan Gomez",
   "license": "MIT",
@@ -26,7 +27,13 @@
   },
   "homepage": "https://github.com/yohangz/zsc-dropdown#readme",
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@rollup/plugin-node-resolve": "^7.1.3",
     "eslint": "^6.8.0",
-    "prettier": "^2.0.5"
-  }
+    "prettier": "^2.0.5",
+    "rollup": "^2.7.2",
+    "rollup-plugin-babel": "^4.4.0"
+  },
+  "dependencies": {}
 }

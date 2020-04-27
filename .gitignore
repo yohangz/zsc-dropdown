@@ -1,6 +1,9 @@
 # Dependencies
 node_modules/*
 
+# Build artifact
+dist/*
+
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
