@@ -8,6 +8,8 @@
 
   --zsc-background-color: #fff;
 
+  --zsc-select-min-width: 15em;
+
   --zsc-select-view-padding: 0.25em 2em 0.25em 0.25em;
   --zsc-select-default-height: 1.125em;
   --zsc-select-default-margin: 0.25em;
@@ -38,6 +40,7 @@
 
 .zsc-dropdown {
   position: relative;
+  min-width: var(--zsc-select-min-width);
 }
 
 /*------ DROPDOWN SELECT ------*/
