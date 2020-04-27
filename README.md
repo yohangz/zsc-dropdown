@@ -132,6 +132,11 @@ dropdown.dispose();
 
 Host project root in any HTTP server and view `demo/index.html`
 
+## Browser support
+
+This component only support evergreen browsers without compiling down to target ES version and applying polyfills.
+Bable + Rollup can be used to achieve this.
+
 ## TODO: Future Enhansments
 - Comprehensive unit test suite.
 - Cross browser compatibility.
